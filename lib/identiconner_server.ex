@@ -2,6 +2,7 @@ defmodule IdenticonnerServer do
   use Plug.Router
 
   plug(Plug.Logger)
+  plug(CORSPlug)
   plug(:match)
   plug(:dispatch)
 
